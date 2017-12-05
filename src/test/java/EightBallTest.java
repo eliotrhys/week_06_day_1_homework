@@ -37,6 +37,12 @@ public class EightBallTest {
         System.out.println(eightBallExample.shakeThat());
     }
 
+    @Test
+    public void testRemove() {
+        eightBallExample.removeAnswer("Oops");
+        assertEquals(2, eightBallExample.getWordCount());
+    }
+
 }
 
 

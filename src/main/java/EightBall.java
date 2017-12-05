@@ -22,4 +22,8 @@ public class EightBall {
         return results.get(0);
     }
 
+    public void removeAnswer(String answer){
+        this.results.remove(answer);
+    }
 }
+
